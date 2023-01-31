@@ -1,6 +1,11 @@
-body{
+main{
     display:flex;
     justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
 #container{
     width: 50%;
@@ -10,4 +15,20 @@ body{
 
 #container div{
     padding: 50%;
+}
+
+.start{
+    border: 3px solid pink;
+    background-color: rgb(208, 136, 148);
+    color:white;
+    border-radius: 5px;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;;
+}
+
+.start:hover{
+    background-color: pink;
+    cursor:pointer;
 }
