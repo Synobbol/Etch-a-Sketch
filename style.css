@@ -1,0 +1,13 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+#container{
+    width: 50%;
+    display: grid;
+    gap : 5px;
+}
+
+#container div{
+    padding: 50%;
+}
