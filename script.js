@@ -14,7 +14,7 @@ start.addEventListener("click", () =>{
         
     }
     else{
-        container.textContent = "ERROR: number of squares must be under 100!";
+        container.textContent = "ERROR: number of squares must be under 100.";
         container.style.color = "red";
         return main.appendChild(container);
     }
@@ -34,7 +34,11 @@ function createDiv(number = 16){
 }
 
 function addHover(){
-    this.setAttribute("style", "transition: 0.7s; background-color: pink; cursor:pointer;");
+    let randomNbr1 = Math.floor(Math.random() * 255);
+    let randomNbr2 = Math.floor(Math.random() * 255);
+    let randomNbr3 = Math.floor(Math.random() * 255);
+
+    this.setAttribute("style", `transition: 0.7s; background-color: rgb(${randomNbr1}, ${randomNbr2}, ${randomNbr3}); cursor:pointer;`);
     
 }
 
